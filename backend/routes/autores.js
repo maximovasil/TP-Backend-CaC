@@ -8,6 +8,12 @@ router.get('/', async (req, res) => {
   res.json(autores);
 });
 
+// GET author by ID
+router.get('/:id', async (req, res) => {
+  const autor = await Autor.findByPk(req.params.id);
+  res.json(autor);
+});
+
 // POST a new author
 router.post('/', async (req, res) => {
   const nuevoAutor = await Autor.create(req.body);

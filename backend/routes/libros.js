@@ -8,6 +8,14 @@ router.get('/', async (req, res) => {
   res.json(libros);
 });
 
+// GET books by author ID
+router.get('/autor/:id_autor', async (req, res) => {
+  const libros = await Libro.findAll({
+    where: { id_autor: req.params.id_autor }
+  });
+  res.json(libros);
+});
+
 // POST a new book
 router.post('/', async (req, res) => {
   const nuevoLibro = await Libro.create(req.body);
