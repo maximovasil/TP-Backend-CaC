@@ -1,0 +1,14 @@
+{
+    "name": "my-library",
+    "version": "1.0.0",
+    "description": "Library management system",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "mysql2": "^2.3.3",
+        "sequelize": "^6.37.3"
+    }
+}
