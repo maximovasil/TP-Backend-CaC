@@ -8,6 +8,7 @@
 </head>
 <body>
   <h1>Library Management</h1>
+  <div id="message"></div>
   <div>
     <h2>Autores</h2>
     <form id="autorForm">
@@ -21,8 +22,20 @@
       <input type="number" id="autorId" placeholder="Buscar Autor por ID">
       <button id="buscarAutores">Buscar Todos los Autores</button>
       <button id="buscarAutorPorId">Buscar Autor por ID</button>
-    </div>  
-    <ul id="autoresList"></ul>
+      <table id="autoresTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Nacionalidad</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </div>
 
   <div>
@@ -38,9 +51,24 @@
       <input type="number" id="autorLibrosId" placeholder="Buscar Libros por ID de Autor">
       <button id="buscarLibros">Buscar Todos los Libros</button>
       <button id="buscarLibrosPorAutor">Buscar Libros por Autor</button>
-    </div>  
-    <ul id="librosList"></ul>
+      <table id="librosTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Género</th>
+            <th>Fecha de Publicación</th>
+            <th>ID del Autor</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </div>
+
+  <button id="resetTables">Reiniciar Tablas</button>
+
 
   <script src="script.js"></script>
 </body>
