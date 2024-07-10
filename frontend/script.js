@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const apellido = prompt('Nuevo apellido:');
       if (!apellido) throw new Error('Apellido es requerido');
       const nacionalidad = prompt('Nueva nacionalidad:');
+      if (!nacionalidad) throw new Error('Nacionalidad es requerida');
       const fecha_nacimiento = prompt('Nueva fecha de nacimiento (YYYY-MM-DD):');
       if (!fecha_nacimiento) throw new Error('Fecha de nacimiento es requerida');
       const response = await fetch(`/api/autores/${id}`, {

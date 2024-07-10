@@ -16,7 +16,7 @@ const Libro = sequelize.define('Libro', {
     type: DataTypes.STRING
   },
   fecha_publicacion: {
-    type: DataTypes.DATE
+    type: DataTypes.DATEONLY
   },
   id_autor: {
     type: DataTypes.INTEGER,

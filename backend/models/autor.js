@@ -19,7 +19,7 @@ const Autor = sequelize.define('Autor', {
     type: DataTypes.STRING
   },
   fecha_nacimiento: {
-    type: DataTypes.DATE
+    type: DataTypes.DATEONLY
   }
 }, {
   tableName: 'Autores',
